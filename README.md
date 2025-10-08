@@ -10,7 +10,7 @@
 > **Key Words:** **Neural Network**, **Variational Method**, **Maximum Flux Path (MFP)**, **Minimum Energy Path (MEP)**, **Minimum Action Path (MAP)**, **High-Dimensional Applications**, **Ginzburg–Landau Functional**
 
 ## Introduction
-**StringNET** is a **neural network**–based method for computing transition pathways between metastable states. Our approach is built on a **variational formulation** over curves in the path space and can be used to compute the **Maximum Flux Path (MFP)**, **Minimum Energy Path (MEP)**, and **Minimum Action Path (MAP)**.
+**StringNET** is a **neural network**–based method for computing transition pathways between metastable states. Our approach is built on a **variational formulation** over curves in the path space and can be used to compute the **Maximum Flux Path (MFP)**, and pre-train for **Minimum Energy Path (MEP)**, and **Minimum Action Path (MAP)**.
 
 Our code is accompanied by a set of **numerical examples** that clearly demonstrate the method on various test cases, including:
 - **Double-Well and Three-Well Potentials**
