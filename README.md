@@ -3,7 +3,7 @@
 
 > **StringNET: Neural Network based Variational Method for Transition Pathways**  
 > Jiayue Han, Zhiyou Wu, Shuting Gu, Xiang Zhou  
-> _[Link to paper/preprint if available]_
+> _[https://arxiv.org/abs/2408.12621](https://arxiv.org/abs/2408.12621)_
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
