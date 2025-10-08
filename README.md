@@ -18,5 +18,5 @@ Our code is accompanied by a set of **numerical examples** that clearly demonstr
 - **High-Dimensional Muller Potential**
 - **2D and 4D Ginzburg–Landau Functionals**
 
-For more details, please refer to our paper [StringNET: Neural Network based Variational Method for Transition Pathways](https://arxiv.org/abs/2408.12621).
+For more details, please refer to our preprint in arxiv. [StringNET: Neural Network based Variational Method for Transition Pathways](https://arxiv.org/abs/2408.12621).
 
