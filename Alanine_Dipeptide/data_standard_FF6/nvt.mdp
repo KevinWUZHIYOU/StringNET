@@ -1,0 +1,39 @@
+; MD parameters for vacuum simulation with PBC and large box
+integrator               = md             ; Algorithm for MD simulation
+nsteps                   = 100000         ; Number of steps (500 ps with 2 fs timestep)
+dt                       = 0.002          ; Timestep (ps)
+
+; Output control
+nstxout                 = 500            ; Save coordinates every 1000 steps
+nstvout                 = 500            ; Save velocities every 500 steps
+nstenergy               = 500            ; Save energies every 500 steps
+nstlog                  = 500            ; Update log file every 500 steps
+
+; Neighbor searching
+cutoff-scheme           = Verlet          ; Verlet cutoff scheme
+nstlist                 = 10          ; Frequency to update the neighbor list
+ns_type                 = grid            ; Use grid-based neighbor searching
+rlist                   = 2.5            ; Neighbor list cutoff distance (nm)
+
+; Electrostatics and van der Waals
+coulombtype             = cutoff          ; Coulomb interactions with cutoff
+rcoulomb                = 2.5             ; Coulomb cutoff distance (nm)
+vdwtype                 = cutoff          ; van der Waals interactions with cutoff
+rvdw                    = 2.5             ; van der Waals cutoff distance (nm)
+
+; Temperature coupling
+tcoupl                  = v-rescale       ; Temperature coupling using velocity rescaling
+tc-grps                 = System          ; Group to couple (entire system)
+tau_t                   = 0.1             ; Time constant for temperature coupling (ps)
+ref_t                   = 300             ; Reference temperature (K)
+
+; Pressure coupling
+pcoupl                  = no              ; No pressure coupling (vacuum simulation)
+
+; Periodic boundary conditions
+pbc                     = xyz             ; Full periodic boundary conditions
+
+; Velocity generation
+gen_vel                 = yes             ; Generate initial velocities
+gen_temp                = 300             ; Initial temperature (K)
+gen_seed                = -1              ; Random seed for velocity generation

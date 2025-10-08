@@ -1,0 +1,26 @@
+; Energy minimization parameters for vacuum simulation with no cutoff
+integrator               = steep          ; Algorithm for energy minimization (steepest descent)
+emtol                    = 1000.0         ; Stop minimization when the maximum force < 1000.0 kJ/mol/nm
+emstep                   = 0.01           ; Step size for minimization
+nsteps                   = 50000          ; Maximum number of minimization steps
+
+; Output control
+nstenergy                = 10             ; Write energies to the log file every 10 steps
+
+; Neighbor searching
+cutoff-scheme            = Verlet         ; Verlet cutoff scheme (mandatory in GROMACS 2020+)
+nstlist                  = 10000          ; Frequency to update the neighbor list
+ns_type                  = grid           ; Use grid-based neighbor searching
+rlist                    = 2.5            ; Neighbor list cutoff distance (nm), set to box size
+
+
+; Electrostatics and van der Waals
+coulombtype              = Cut-off         ; Coulomb interactions with cutoff
+rcoulomb                 = 2.5            ; Coulomb cutoff distance (nm), set to box size
+vdwtype                  = Cut-off        ; van der Waals interactions with cutoff
+rvdw                     = 2.5            ; van der Waals cutoff distance (nm), set to box size
+
+
+
+; Periodic boundary conditions
+pbc                      = xyz             ; No periodic boundary conditions (vacuum simulation)
